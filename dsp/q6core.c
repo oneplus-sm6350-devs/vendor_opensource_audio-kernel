@@ -989,6 +989,7 @@ int32_t q6core_avcs_load_unload_modules(struct avcs_load_unload_modules_payload
 		mod->hdr.opcode =  AVCS_CMD_LOAD_MODULES;
 	else
 		mod->hdr.opcode =  AVCS_CMD_UNLOAD_MODULES;
+	q6core_lcl.adsp_status = 0;
 
 	q6core_lcl.adsp_status = 0;
 	q6core_lcl.avcs_module_resp_received = 0;
